@@ -37,16 +37,8 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ikid jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW7-nA-PdQ">
-                                <rect key="frame" x="161" y="212" width="71" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Katie Hsu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbC-ky-a1o">
-                                <rect key="frame" x="159" y="256" width="73" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ikid jokes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW7-nA-PdQ">
+                                <rect key="frame" x="161" y="415.66666666666669" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,6 +46,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iW7-nA-PdQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G5Z-GE-uVn"/>
+                            <constraint firstItem="iW7-nA-PdQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PHS-0s-dTN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ws4-J6-kQE"/>
                 </viewController>
@@ -69,16 +65,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-6u-o29">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-6u-o29">
                                 <rect key="frame" x="159.66666666666666" y="386" width="74" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kui-3Q-4XZ">
-                                <rect key="frame" x="310" y="724" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kui-3Q-4XZ">
+                                <rect key="frame" x="313" y="738" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -88,6 +82,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xyD-xR-xIo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xyD-xR-xIo" firstAttribute="trailing" secondItem="kui-3Q-4XZ" secondAttribute="trailing" constant="20" id="61V-2C-UPr"/>
+                            <constraint firstItem="cXE-6u-o29" firstAttribute="centerX" secondItem="Lma-Nr-HGZ" secondAttribute="centerX" id="UBk-o4-HkG"/>
+                            <constraint firstItem="xyD-xR-xIo" firstAttribute="bottom" secondItem="kui-3Q-4XZ" secondAttribute="bottom" constant="20" id="ogH-EK-hDt"/>
+                            <constraint firstItem="cXE-6u-o29" firstAttribute="centerY" secondItem="Lma-Nr-HGZ" secondAttribute="centerY" id="wWd-PK-G7e"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TvT-nS-WGN"/>
                 </viewController>
@@ -109,9 +109,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-4N-A4g">
-                                <rect key="frame" x="305" y="714" width="70" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDe-4N-A4g">
+                                <rect key="frame" x="303" y="728.66666666666663" width="70" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                                 <connections>
@@ -122,6 +121,8 @@
                         <viewLayoutGuide key="safeArea" id="UHU-yc-T19"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="UHU-yc-T19" firstAttribute="bottom" secondItem="QDe-4N-A4g" secondAttribute="bottom" constant="20" id="7us-k5-N4a"/>
+                            <constraint firstItem="UHU-yc-T19" firstAttribute="trailing" secondItem="QDe-4N-A4g" secondAttribute="trailing" constant="20" id="HPu-YC-om8"/>
                             <constraint firstItem="5XO-1h-uFG" firstAttribute="centerX" secondItem="nPm-8b-0of" secondAttribute="centerX" id="S9X-WJ-Mvn"/>
                             <constraint firstItem="5XO-1h-uFG" firstAttribute="centerY" secondItem="nPm-8b-0of" secondAttribute="centerY" id="okE-s5-uam"/>
                         </constraints>
@@ -147,9 +148,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-hd-oy5">
-                                <rect key="frame" x="317" y="724" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-hd-oy5">
+                                <rect key="frame" x="313" y="738" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -160,7 +160,9 @@
                         <viewLayoutGuide key="safeArea" id="k0P-Rh-SXK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="k0P-Rh-SXK" firstAttribute="trailing" secondItem="8z6-hd-oy5" secondAttribute="trailing" constant="20" id="2M6-X4-cak"/>
                             <constraint firstItem="dNO-ej-YYj" firstAttribute="centerY" secondItem="EBX-my-qC5" secondAttribute="centerY" id="bCi-3R-uKl"/>
+                            <constraint firstItem="k0P-Rh-SXK" firstAttribute="bottom" secondItem="8z6-hd-oy5" secondAttribute="bottom" constant="20" id="rez-J2-1OB"/>
                             <constraint firstItem="dNO-ej-YYj" firstAttribute="centerX" secondItem="EBX-my-qC5" secondAttribute="centerX" id="uqN-uu-kux"/>
                         </constraints>
                     </view>
@@ -184,9 +186,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-NV-i3J">
-                                <rect key="frame" x="310" y="724" width="60" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otx-NV-i3J">
+                                <rect key="frame" x="313" y="738" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
@@ -197,8 +198,10 @@
                         <viewLayoutGuide key="safeArea" id="ihV-NR-sP0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ihV-NR-sP0" firstAttribute="trailing" secondItem="Otx-NV-i3J" secondAttribute="trailing" constant="20" id="5UN-GU-oIO"/>
                             <constraint firstItem="47A-Xx-37G" firstAttribute="centerX" secondItem="4n1-TC-CA6" secondAttribute="centerX" id="LY5-Ok-cT6"/>
                             <constraint firstItem="47A-Xx-37G" firstAttribute="centerY" secondItem="4n1-TC-CA6" secondAttribute="centerY" id="XPj-pm-jJ2"/>
+                            <constraint firstItem="ihV-NR-sP0" firstAttribute="bottom" secondItem="Otx-NV-i3J" secondAttribute="bottom" constant="20" id="wHZ-WY-t99"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vFK-rM-ofp"/>
@@ -221,9 +224,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqc-ol-EMh">
-                                <rect key="frame" x="305" y="714" width="70" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqc-ol-EMh">
+                                <rect key="frame" x="303" y="728" width="70" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                                 <connections>
@@ -235,7 +237,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ooO-Qe-Ycd" firstAttribute="centerY" secondItem="pYN-aF-QK7" secondAttribute="centerY" id="55P-1Q-Se4"/>
+                            <constraint firstItem="pug-Yp-FYy" firstAttribute="bottom" secondItem="Eqc-ol-EMh" secondAttribute="bottom" constant="20" id="GfL-Lo-NrT"/>
                             <constraint firstItem="ooO-Qe-Ycd" firstAttribute="centerX" secondItem="pYN-aF-QK7" secondAttribute="centerX" id="m8K-QK-ysl"/>
+                            <constraint firstItem="pug-Yp-FYy" firstAttribute="trailing" secondItem="Eqc-ol-EMh" secondAttribute="trailing" constant="20" id="sAm-r2-4MN"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -262,9 +266,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-SJ-nVe">
-                                <rect key="frame" x="305" y="714" width="70" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-SJ-nVe">
+                                <rect key="frame" x="303" y="728" width="70" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                                 <connections>
@@ -276,7 +279,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Dqu-44-tGT" firstAttribute="centerX" secondItem="oXK-AF-iiv" secondAttribute="centerX" id="2KT-hw-6a4"/>
+                            <constraint firstItem="WBr-pr-4kX" firstAttribute="bottom" secondItem="TMx-SJ-nVe" secondAttribute="bottom" constant="20" id="hUL-Hf-MYl"/>
                             <constraint firstItem="Dqu-44-tGT" firstAttribute="centerY" secondItem="oXK-AF-iiv" secondAttribute="centerY" id="v9G-rt-2a7"/>
+                            <constraint firstItem="WBr-pr-4kX" firstAttribute="trailing" secondItem="TMx-SJ-nVe" secondAttribute="trailing" constant="20" id="woe-5z-wsm"/>
                         </constraints>
                     </view>
                 </viewController>
