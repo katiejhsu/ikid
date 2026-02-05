@@ -9,6 +9,193 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="0oR-JQ-u5k">
+            <objects>
+                <viewController id="Bmv-Wl-F5s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mhK-O5-6xY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siri-ously? You don't recognize my voice by now?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y44-hD-M2z">
+                                <rect key="frame" x="9" y="381" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlF-39-F6d">
+                                <rect key="frame" x="303" y="728" width="70" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Home"/>
+                                <connections>
+                                    <segue destination="UVy-1r-1us" kind="unwind" unwindAction="goHome:" id="4dd-YM-3cv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ODd-cz-gEI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y44-hD-M2z" firstAttribute="centerY" secondItem="mhK-O5-6xY" secondAttribute="centerY" id="0H0-ZO-5Z2"/>
+                            <constraint firstItem="y44-hD-M2z" firstAttribute="centerX" secondItem="mhK-O5-6xY" secondAttribute="centerX" id="0yq-VR-sBy"/>
+                            <constraint firstAttribute="bottom" secondItem="qlF-39-F6d" secondAttribute="bottom" constant="20" id="WSZ-tH-98l"/>
+                            <constraint firstAttribute="trailing" secondItem="qlF-39-F6d" secondAttribute="trailing" constant="20" id="mQa-JQ-rOW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9h-g7-mrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="UVy-1r-1us" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-3638" y="152"/>
+        </scene>
+        <!--Siri Who Controller-->
+        <scene sceneID="QKe-FY-cb9">
+            <objects>
+                <viewController id="B05-TY-Xe2" customClass="SiriWhoController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cZ-4i-2BZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siri Who?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1l-Q3-mQs">
+                                <rect key="frame" x="160.66666666666666" y="381" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-ic-xf8">
+                                <rect key="frame" x="313" y="728" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="Bmv-Wl-F5s" kind="presentation" modalTransitionStyle="flipHorizontal" id="t07-Is-jsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4VV-5X-Rpn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G1l-Q3-mQs" firstAttribute="centerY" secondItem="3cZ-4i-2BZ" secondAttribute="centerY" id="8IY-lK-5A3"/>
+                            <constraint firstItem="G1l-Q3-mQs" firstAttribute="centerX" secondItem="3cZ-4i-2BZ" secondAttribute="centerX" id="HYi-FL-ofe"/>
+                            <constraint firstAttribute="trailing" secondItem="jrd-ic-xf8" secondAttribute="trailing" constant="20" id="iK5-wM-P9b"/>
+                            <constraint firstAttribute="bottom" secondItem="jrd-ic-xf8" secondAttribute="bottom" constant="20" id="prx-xw-hXJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keX-Qb-pgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2985" y="146"/>
+        </scene>
+        <!--Siri Controller-->
+        <scene sceneID="N6x-Gy-3fS">
+            <objects>
+                <viewController id="FoO-Zk-ctu" customClass="SiriController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j2m-B9-GqX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVL-kD-0oQ">
+                                <rect key="frame" x="184.66666666666666" y="381" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebn-oo-hy8">
+                                <rect key="frame" x="313" y="728" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="B05-TY-Xe2" kind="presentation" modalTransitionStyle="flipHorizontal" id="AsM-Lw-cOo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ota-OX-EAH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ebn-oo-hy8" secondAttribute="trailing" constant="20" id="QHK-HG-Vyg"/>
+                            <constraint firstItem="nVL-kD-0oQ" firstAttribute="centerX" secondItem="j2m-B9-GqX" secondAttribute="centerX" id="Ygr-4h-ySn"/>
+                            <constraint firstItem="nVL-kD-0oQ" firstAttribute="centerY" secondItem="j2m-B9-GqX" secondAttribute="centerY" id="m2b-dy-h5h"/>
+                            <constraint firstAttribute="bottom" secondItem="Ebn-oo-hy8" secondAttribute="bottom" constant="20" id="ycd-bh-4tG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULQ-TX-QyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2276" y="131"/>
+        </scene>
+        <!--Whos There Controller-->
+        <scene sceneID="mZl-V9-1Ib">
+            <objects>
+                <viewController id="Auc-SF-DnE" customClass="WhosThereController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FXS-Je-vMi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who's There?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNN-gg-Kqt">
+                                <rect key="frame" x="143.66666666666666" y="381" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHS-up-ZNL">
+                                <rect key="frame" x="313" y="728" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="FoO-Zk-ctu" kind="presentation" modalTransitionStyle="flipHorizontal" id="xni-cP-vZz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PgP-mT-WIY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wNN-gg-Kqt" firstAttribute="centerX" secondItem="FXS-Je-vMi" secondAttribute="centerX" id="EUD-ZJ-S9h"/>
+                            <constraint firstAttribute="bottom" secondItem="zHS-up-ZNL" secondAttribute="bottom" constant="20" id="FDy-Hf-MeY"/>
+                            <constraint firstItem="wNN-gg-Kqt" firstAttribute="centerY" secondItem="FXS-Je-vMi" secondAttribute="centerY" id="Sih-pr-M7A"/>
+                            <constraint firstItem="PgP-mT-WIY" firstAttribute="trailing" secondItem="zHS-up-ZNL" secondAttribute="trailing" constant="20" id="bag-jT-s2v"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tzy-4n-lJw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1541" y="122"/>
+        </scene>
+        <!--Knock Knock Controller-->
+        <scene sceneID="wSZ-0t-lG1">
+            <objects>
+                <viewController id="7i1-sb-z3a" customClass="KnockKnockController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ez-oR-I1w">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock Knock?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrB-NF-93r">
+                                <rect key="frame" x="142" y="386" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgv-hY-fZr">
+                                <rect key="frame" x="313" y="738" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <segue destination="Auc-SF-DnE" kind="presentation" modalTransitionStyle="flipHorizontal" id="Lf4-XG-aDm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hzC-fM-khM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VrB-NF-93r" firstAttribute="centerX" secondItem="5Ez-oR-I1w" secondAttribute="centerX" id="JRS-Eo-29K"/>
+                            <constraint firstItem="hzC-fM-khM" firstAttribute="bottom" secondItem="Xgv-hY-fZr" secondAttribute="bottom" constant="20" id="LKJ-dA-4zn"/>
+                            <constraint firstItem="hzC-fM-khM" firstAttribute="trailing" secondItem="Xgv-hY-fZr" secondAttribute="trailing" constant="20" id="P7I-ZW-cfL"/>
+                            <constraint firstItem="VrB-NF-93r" firstAttribute="centerY" secondItem="5Ez-oR-I1w" secondAttribute="centerY" id="ygB-fK-Xvz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u7p-X9-cnX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f04-aS-cb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="118"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,6 +220,11 @@
                                     <barButtonItem title="Dad" id="Zub-gt-u6z">
                                         <connections>
                                             <segue destination="R62-vt-KPn" kind="show" id="XDi-vn-XqS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Knock" id="bMa-6I-p8g">
+                                        <connections>
+                                            <segue destination="7i1-sb-z3a" kind="show" id="LcL-I0-HKR"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -65,8 +257,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-6u-o29">
-                                <rect key="frame" x="159.66666666666666" y="386" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you call a beautiful pumpkin?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-6u-o29">
+                                <rect key="frame" x="52" y="386" width="289" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -103,8 +295,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XO-1h-uFG">
-                                <rect key="frame" x="168" y="381" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOURDeous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XO-1h-uFG">
+                                <rect key="frame" x="148" y="381" width="97" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,16 +326,16 @@
             </objects>
             <point key="canvasLocation" x="1919.8473282442746" y="-37.323943661971832"/>
         </scene>
-        <!--View Controller-->
+        <!--Pun Controller-->
         <scene sceneID="Ldw-Zx-3IR">
             <objects>
-                <viewController id="tV9-oN-CnI" sceneMemberID="viewController">
+                <viewController id="tV9-oN-CnI" customClass="PunController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBX-my-qC5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNO-ej-YYj">
-                                <rect key="frame" x="159.66666666666666" y="386" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="why did the iphone need to buy glasses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNO-ej-YYj">
+                                <rect key="frame" x="46" y="386" width="301" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -180,8 +372,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47A-Xx-37G">
-                                <rect key="frame" x="159.66666666666666" y="386" width="74" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the smartphone go to the dentist?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47A-Xx-37G">
+                                <rect key="frame" x="34" y="386" width="325" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -218,8 +410,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Qe-Ycd">
-                                <rect key="frame" x="168" y="381" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Because it had a blue tooth!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooO-Qe-Ycd">
+                                <rect key="frame" x="90.666666666666686" y="381" width="212" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -256,16 +448,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dqu-44-tGT">
-                                <rect key="frame" x="168" y="381" width="57" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="WE2-xj-pcK"/>
-                                    <constraint firstAttribute="height" constant="21" id="lvS-xY-BH2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-SJ-nVe">
                                 <rect key="frame" x="303" y="728" width="70" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -274,13 +456,19 @@
                                     <segue destination="A7e-hU-5Di" kind="unwind" unwindAction="goHome:" id="UO8-YT-g8k"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Because he lost his contacts!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKc-fD-On5">
+                                <rect key="frame" x="85.666666666666686" y="381" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WBr-pr-4kX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Dqu-44-tGT" firstAttribute="centerX" secondItem="oXK-AF-iiv" secondAttribute="centerX" id="2KT-hw-6a4"/>
+                            <constraint firstItem="hKc-fD-On5" firstAttribute="centerX" secondItem="oXK-AF-iiv" secondAttribute="centerX" id="2h6-vY-pJF"/>
+                            <constraint firstItem="hKc-fD-On5" firstAttribute="centerY" secondItem="oXK-AF-iiv" secondAttribute="centerY" id="5pd-XW-9Cn"/>
                             <constraint firstItem="WBr-pr-4kX" firstAttribute="bottom" secondItem="TMx-SJ-nVe" secondAttribute="bottom" constant="20" id="hUL-Hf-MYl"/>
-                            <constraint firstItem="Dqu-44-tGT" firstAttribute="centerY" secondItem="oXK-AF-iiv" secondAttribute="centerY" id="v9G-rt-2a7"/>
                             <constraint firstItem="WBr-pr-4kX" firstAttribute="trailing" secondItem="TMx-SJ-nVe" secondAttribute="trailing" constant="20" id="woe-5z-wsm"/>
                         </constraints>
                     </view>
