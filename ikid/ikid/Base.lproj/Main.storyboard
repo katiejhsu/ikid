@@ -22,12 +22,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlF-39-F6d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gx-gu-HyV">
                                 <rect key="frame" x="303" y="728" width="70" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Home"/>
                                 <connections>
-                                    <segue destination="UVy-1r-1us" kind="unwind" unwindAction="goHome:" id="4dd-YM-3cv"/>
+                                    <segue destination="UVy-1r-1us" kind="unwind" unwindAction="goHome:" id="WXX-Xk-8kt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,8 +36,8 @@
                         <constraints>
                             <constraint firstItem="y44-hD-M2z" firstAttribute="centerY" secondItem="mhK-O5-6xY" secondAttribute="centerY" id="0H0-ZO-5Z2"/>
                             <constraint firstItem="y44-hD-M2z" firstAttribute="centerX" secondItem="mhK-O5-6xY" secondAttribute="centerX" id="0yq-VR-sBy"/>
-                            <constraint firstAttribute="bottom" secondItem="qlF-39-F6d" secondAttribute="bottom" constant="20" id="WSZ-tH-98l"/>
-                            <constraint firstAttribute="trailing" secondItem="qlF-39-F6d" secondAttribute="trailing" constant="20" id="mQa-JQ-rOW"/>
+                            <constraint firstItem="ODd-cz-gEI" firstAttribute="trailing" secondItem="4gx-gu-HyV" secondAttribute="trailing" constant="20" id="B19-Bc-1mI"/>
+                            <constraint firstItem="ODd-cz-gEI" firstAttribute="bottom" secondItem="4gx-gu-HyV" secondAttribute="bottom" constant="20" id="Cfd-ui-KzQ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -60,12 +60,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrd-ic-xf8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omv-Vr-6qW">
                                 <rect key="frame" x="313" y="728" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="Bmv-Wl-F5s" kind="presentation" modalTransitionStyle="flipHorizontal" id="t07-Is-jsS"/>
+                                    <segue destination="Bmv-Wl-F5s" kind="presentation" modalTransitionStyle="flipHorizontal" id="KEg-Zn-ju3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,8 +74,8 @@
                         <constraints>
                             <constraint firstItem="G1l-Q3-mQs" firstAttribute="centerY" secondItem="3cZ-4i-2BZ" secondAttribute="centerY" id="8IY-lK-5A3"/>
                             <constraint firstItem="G1l-Q3-mQs" firstAttribute="centerX" secondItem="3cZ-4i-2BZ" secondAttribute="centerX" id="HYi-FL-ofe"/>
-                            <constraint firstAttribute="trailing" secondItem="jrd-ic-xf8" secondAttribute="trailing" constant="20" id="iK5-wM-P9b"/>
-                            <constraint firstAttribute="bottom" secondItem="jrd-ic-xf8" secondAttribute="bottom" constant="20" id="prx-xw-hXJ"/>
+                            <constraint firstItem="4VV-5X-Rpn" firstAttribute="bottom" secondItem="Omv-Vr-6qW" secondAttribute="bottom" constant="20" id="kzW-2b-lTU"/>
+                            <constraint firstItem="4VV-5X-Rpn" firstAttribute="trailing" secondItem="Omv-Vr-6qW" secondAttribute="trailing" constant="20" id="vJ0-ks-Tu8"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -97,22 +97,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebn-oo-hy8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB8-vK-eC3">
                                 <rect key="frame" x="313" y="728" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="B05-TY-Xe2" kind="presentation" modalTransitionStyle="flipHorizontal" id="AsM-Lw-cOo"/>
+                                    <segue destination="B05-TY-Xe2" kind="presentation" modalTransitionStyle="flipHorizontal" id="OrV-rl-uBg"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ota-OX-EAH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ebn-oo-hy8" secondAttribute="trailing" constant="20" id="QHK-HG-Vyg"/>
+                            <constraint firstItem="Ota-OX-EAH" firstAttribute="trailing" secondItem="AB8-vK-eC3" secondAttribute="trailing" constant="20" id="1EH-rq-KkZ"/>
+                            <constraint firstItem="Ota-OX-EAH" firstAttribute="bottom" secondItem="AB8-vK-eC3" secondAttribute="bottom" constant="20" id="6g5-41-1kw"/>
                             <constraint firstItem="nVL-kD-0oQ" firstAttribute="centerX" secondItem="j2m-B9-GqX" secondAttribute="centerX" id="Ygr-4h-ySn"/>
+                            <constraint firstItem="Ota-OX-EAH" firstAttribute="bottom" secondItem="AB8-vK-eC3" secondAttribute="bottom" constant="20" id="esx-95-4U2"/>
                             <constraint firstItem="nVL-kD-0oQ" firstAttribute="centerY" secondItem="j2m-B9-GqX" secondAttribute="centerY" id="m2b-dy-h5h"/>
-                            <constraint firstAttribute="bottom" secondItem="Ebn-oo-hy8" secondAttribute="bottom" constant="20" id="ycd-bh-4tG"/>
+                            <constraint firstItem="Ota-OX-EAH" firstAttribute="trailing" secondItem="AB8-vK-eC3" secondAttribute="trailing" constant="20" id="y0r-fF-oxP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -134,12 +136,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHS-up-ZNL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBK-ju-MGI">
                                 <rect key="frame" x="313" y="728" width="60" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                 <connections>
-                                    <segue destination="FoO-Zk-ctu" kind="presentation" modalTransitionStyle="flipHorizontal" id="xni-cP-vZz"/>
+                                    <segue destination="FoO-Zk-ctu" kind="presentation" modalTransitionStyle="flipHorizontal" id="t8U-cb-RRr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,9 +149,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="wNN-gg-Kqt" firstAttribute="centerX" secondItem="FXS-Je-vMi" secondAttribute="centerX" id="EUD-ZJ-S9h"/>
-                            <constraint firstAttribute="bottom" secondItem="zHS-up-ZNL" secondAttribute="bottom" constant="20" id="FDy-Hf-MeY"/>
                             <constraint firstItem="wNN-gg-Kqt" firstAttribute="centerY" secondItem="FXS-Je-vMi" secondAttribute="centerY" id="Sih-pr-M7A"/>
-                            <constraint firstItem="PgP-mT-WIY" firstAttribute="trailing" secondItem="zHS-up-ZNL" secondAttribute="trailing" constant="20" id="bag-jT-s2v"/>
+                            <constraint firstItem="PgP-mT-WIY" firstAttribute="trailing" secondItem="sBK-ju-MGI" secondAttribute="trailing" constant="20" id="YMp-3t-Svh"/>
+                            <constraint firstItem="PgP-mT-WIY" firstAttribute="bottom" secondItem="sBK-ju-MGI" secondAttribute="bottom" constant="20" id="qTT-gX-Xo3"/>
+                            <constraint firstItem="PgP-mT-WIY" firstAttribute="bottom" secondItem="sBK-ju-MGI" secondAttribute="bottom" constant="20" id="zxk-2A-gcZ"/>
                         </constraints>
                     </view>
                 </viewController>
